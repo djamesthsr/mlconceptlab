@@ -1,0 +1,6 @@
+{
+  "name": "Machine Learning Concepts Lab",
+  "description": "An interactive, gamified learning application for exploring Supervised, Unsupervised, and Reinforcement Learning concepts through evidence-based real-world labs and AI-powered feedback.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
