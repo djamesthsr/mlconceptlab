@@ -23,7 +23,7 @@ import {
 const LOCAL_STORAGE_KEY = "ml_concepts_lab_progress_v1";
 
 const defaultState: MissionState = {
-  userName: "D. James",
+  userName: "Enter your name",
   xp: 0,
   badgeUnlocked: false,
   currentTab: "dashboard",
