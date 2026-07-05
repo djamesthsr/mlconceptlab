@@ -160,7 +160,7 @@ Ensure the tone is scientific, warm, professional, and personalized. Make it fee
     console.error("Error generating mission report:", error);
     res.json({
       report: `### PERSONALIZED LAB EVALUATION
-**To:** ML Scientist ${userName || "James"}  
+**To:** ML Scientist ${userName || "Name"}  
 **Status:** Certified ML Scientist  
 
 Your performance across all diagnostic modules indicates a robust grasp of machine learning concepts. You successfully navigated the Supervised, Unsupervised, and Reinforcement Learning environments, demonstrating excellent capacity in data categorization and consultive modeling.
