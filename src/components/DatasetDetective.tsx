@@ -107,15 +107,14 @@ export default function DatasetDetective({
     const isCorrect = card.correctCategory === category;
 
     if (isCorrect) {
-      setClassifiedCards(prev => {
-        const next = { ...prev, [cardId]: category };
-        // Check if all are complete
-        const completedCount = Object.values(next).filter(Boolean).length;
-        if (completedCount === datasetCards.length) {
-          onCompleteDetective();
-        }
-        return next;
-      });
+      const next = { ...classifiedCards, [cardId]: category };
+      setClassifiedCards(next);
+      
+      // Check if all are complete
+      const completedCount = Object.values(next).filter(Boolean).length;
+      if (completedCount === datasetCards.length) {
+        onCompleteDetective();
+      }
       setErrorCount(prev => ({ ...prev, [cardId]: false }));
       // Go to next card automatically if possible
       if (activeCardIndex < datasetCards.length - 1) {
